@@ -1,0 +1,31 @@
+spring:
+  application:
+    name: server
+server:
+  port: 8081
+  context-path: /server
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    serviceUrl: 
+      defaultZone: http://localhost:8090/eureka/
+
+
+security: 
+  basic: 
+    enabled: false
+
+hystrix: 
+  command: 
+    default: 
+      execution: 
+        timeout: 
+          enabled: true
+        isolation:
+          thread:
+            timeoutInMilliseconds: 1000
+  threadpool: 
+    default: 
+      coreSize: 10
