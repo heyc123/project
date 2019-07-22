@@ -1,7 +1,13 @@
 spring:
   application:
-    name: client
-server:
+    name: testconfig                     #指定了配置文件的应用名
+  cloud:
+    config:
+      discovery:
+        service-id: config-server       #Config server的uri
+      profile: dev                       #指定的环境
+      ##label: master                      #指定分支
+server: 
   port: 8082
   context-path: /client
  
