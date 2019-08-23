@@ -1,9 +1,11 @@
-package com.example.heyc.dto;
+﻿package com.example.heyc.dto;
 
 import javax.xml.bind.annotation.XmlRootElement;
 
 import lombok.Data;
+
 //----测试更新
+
 @Data
 @XmlRootElement
 public class RequestXml {
