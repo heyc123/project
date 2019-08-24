@@ -8,8 +8,6 @@ import lombok.Data;
 
 //22222222--1测试更新
 
-
-
 @Data
 @XmlRootElement
 public class RequestXml {
