@@ -4,12 +4,6 @@ import javax.xml.bind.annotation.XmlRootElement;
 
 import lombok.Data;
 
-
-//--???/测试更新
-
-//--1测试更新
-
-
 @Data
 @XmlRootElement
 public class RequestXml2 {
